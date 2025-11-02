@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Paths-LE: Zero Hassle Path Extraction</h1>
 <p align="center">
-  <b>Extract 10,000 paths in 0.3 seconds</b> • <b>50x faster than manual searching</b><br/>
+  <b>Extract thousands of paths in under a second</b><br/>
   <i>JavaScript, TypeScript, JSON, HTML, CSS, TOML, CSV, and Environment files</i>
 </p>
 
@@ -45,7 +45,7 @@ import { Header } from '../layout/Header'
 // ... 50 more imports scattered across files
 ```
 
-**After**: One command extracts all 52 paths in 0.3 seconds
+**After**: One command extracts all 52 paths in under a second
 
 ```
 ./components/Button (line 1)
@@ -54,13 +54,13 @@ import { Header } from '../layout/Header'
 ... (52 paths total)
 ```
 
-**Time Saved**: 15 minutes → 1 second ⚡
+**Time Saved**: Minutes → Under a second ⚡
 
 ---
 
 ## ✅ Why Paths-LE?
 
-- **10,000 paths in 0.3 seconds** - 50x faster than manual searching
+- **Extract thousands of paths in under a second** - Faster than manual searching
 - **Zero Config** - Install → Press `Cmd+Alt+P` → Done
 - **Battle-Tested** - 289 unit tests, 93.55% coverage, zero critical vulnerabilities
 - **Security-Hardened** - 64 tests prevent path traversal, symlink exploits, injection attacks
@@ -92,9 +92,11 @@ If Paths-LE saves you time, a quick rating helps other developers discover it:
 - **[String-LE](https://open-vsx.org/extension/OffensiveEdge/string-le)** - Extract user-visible strings for i18n and validation • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.string-le)
 - **[Numbers-LE](https://open-vsx.org/extension/OffensiveEdge/numbers-le)** - Extract and analyze numeric data with statistics • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.numbers-le)
 - **[EnvSync-LE](https://open-vsx.org/extension/OffensiveEdge/envsync-le)** - Keep .env files in sync with visual diffs • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.envsync-le)
-- **[URLs-LE](https://open-vsx.org/extension/OffensiveEdge/urls-le)** - Audit API endpoints and external resources • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.urls-le)
+- **[Regex-LE](https://open-vsx.org/extension/OffensiveEdge/regex-le)** - Test and validate regex patterns with live feedback • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.regex-le)
+- **[Secrets-LE](https://open-vsx.org/extension/OffensiveEdge/secrets-le)** - Detect and sanitize secrets before you commit • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.secrets-le)
 - **[Scrape-LE](https://open-vsx.org/extension/OffensiveEdge/scrape-le)** - Validate scraper targets before debugging • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.scrape-le)
 - **[Colors-LE](https://open-vsx.org/extension/OffensiveEdge/colors-le)** - Extract and analyze colors from stylesheets • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.colors-le)
+- **[URLs-LE](https://open-vsx.org/extension/OffensiveEdge/urls-le)** - Extract URLs from any codebase with precision • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.urls-le)
 - **[Dates-LE](https://open-vsx.org/extension/OffensiveEdge/dates-le)** - Extract temporal data from logs and APIs • [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.dates-le)
 
 ## 💡 Use Cases
@@ -282,6 +284,12 @@ Up to 30MB. Practical limit: 10MB for optimal performance
 
 **289 unit tests** • **93.55% function coverage, 84.32% line coverage**  
 Powered by Vitest • Run with `bun run test:coverage`
+
+### Core Principle
+
+**No broken or failed tests are allowed in commits.** All tests must pass before code can be committed or merged.
+
+For detailed testing guidelines, see [Testing Guidelines](docs/TESTING.md).
 
 ### Test Suite Breakdown
 
