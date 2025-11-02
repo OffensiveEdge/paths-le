@@ -1,6 +1,6 @@
 {
 	"name": "paths-le",
-	"publisher": "nolindnaidoo",
+	"publisher": "OffensiveEdge",
 	"displayName": "Paths-LE",
 	"description": "Zero Hassle file path extraction and analysis from JavaScript, TypeScript, JSON, HTML, CSS, TOML, CSV, and ENV files",
 	"version": "1.8.1",
